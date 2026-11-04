@@ -1,0 +1,14 @@
+5.1. Khái niệm
+Cấp phát bộ nhớ động là quá trình yêu cầu bộ nhớ trong vùng Heap khi chương trình đang chạy, thay vì xác định kích thước bộ nhớ cố định ngay từ đầu.
+Trong C, các hàm cấp phát bộ nhớ động được khai báo trong thư viện stdlib.h.
+5.2. Các hàm cơ bản
+Hàm	Chức năng
+- malloc()	Cấp phát một vùng nhớ với kích thước yêu cầu
+- calloc()	Cấp phát bộ nhớ và khởi tạo các byte bằng 0
+- realloc()	Thay đổi kích thước vùng nhớ đã cấp phát
+- free()	Giải phóng vùng nhớ đã cấp phát
+
+5.3. Ứng dụng trong Embedded
+- Lưu trữ dữ liệu có kích thước thay đổi.
+- Xây dựng các cấu trúc dữ liệu như Linked List.
+- Quản lý bộ nhớ cho các đối tượng được tạo trong quá trình chạy.

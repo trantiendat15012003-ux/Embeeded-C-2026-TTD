@@ -1,0 +1,24 @@
+3.1. Khái niệm
+Macro là một chỉ thị của bộ tiền xử lý (Preprocessor), được định nghĩa bằng từ khóa #define.
+Trước khi biên dịch, Preprocessor sẽ thay thế tên macro bằng nội dung tương ứng.
+3.2. Các loại Macro
+- Macro định nghĩa hằng số:
+#define LED_PIN 13
+#define SYSTEM_CLOCK 16000000U
+
+- Macro có tham số:
+#define SQUARE(x) ((x) * (x))
+
+int result = SQUARE(5);
+
+- Macro kiểm tra điều kiện:
+#ifdef DEBUG
+    printf("Debug mode\n");
+#endif
+
+
+3.3. Ứng dụng trong Embedded
+- Định nghĩa địa chỉ thanh ghi và chân GPIO.
+- Khai báo các thông số cấu hình.
+- Tạo các hàm tiện ích đơn giản.
+- Bật/tắt chức năng Debug khi biên dịch.

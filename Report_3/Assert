@@ -1,0 +1,15 @@
+2.1. Khái niệm
+assert là một macro được định nghĩa trong thư viện assert.h, dùng để kiểm tra một điều kiện trong chương trình.
+Nếu điều kiện đúng, chương trình tiếp tục chạy. Nếu điều kiện sai, chương trình sẽ báo lỗi và có thể dừng thực thi.
+2.2. Cú pháp
+#include <assert.h>
+
+assert(condition);
+
+2.3. Ứng dụng trong Embedded
+- Kiểm tra điều kiện đầu vào.
+- Phát hiện lỗi trong quá trình phát triển phần mềm.
+- Kiểm tra các giả định của chương trình.
+- Hỗ trợ Debug khi phát triển firmware.
+Lưu ý: Trong Embedded, cần cân nhắc sử dụng assert vì việc dừng chương trình khi xảy ra lỗi có thể ảnh hưởng đến hoạt động của hệ thống. 
+Khi biên dịch với NDEBUG, các lệnh assert sẽ bị vô hiệu hóa.
